@@ -63,7 +63,8 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:largeHeap="true"
-        android:roundIcon="@mipmap/ic_launcher_round">
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:screenOrientation="portrait">
         <activity
             android:name=".LinphoneLauncherActivity"
             android:exported="true"
@@ -120,6 +121,7 @@
         <activity
             android:name=".LinphoneActivity"
             android:launchMode="singleTask"
+            android:screenOrientation="portrait"
             android:theme="@style/NoTitle">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -128,6 +130,7 @@
         <activity
             android:name=".CallIncomingActivity"
             android:launchMode="singleTop"
+            android:screenOrientation="portrait"
             android:theme="@style/NoTitle">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -136,6 +139,7 @@
         <activity
             android:name=".CallOutgoingActivity"
             android:launchMode="singleTop"
+            android:screenOrientation="portrait"
             android:theme="@style/NoTitle">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -144,6 +148,7 @@
         <activity
             android:name=".CallActivity"
             android:launchMode="singleTop"
+            android:screenOrientation="portrait"
             android:theme="@style/FullScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -159,7 +164,7 @@
         </activity>
         <activity
             android:name=".assistant.AssistantActivity"
-            android:screenOrientation="behind"
+            android:screenOrientation="portrait"
             android:theme="@style/NoTitle">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -167,7 +172,7 @@
         </activity>
         <activity
             android:name=".purchase.InAppPurchaseActivity"
-            android:screenOrientation="nosensor"
+            android:screenOrientation="portrait"
             android:theme="@style/NoTitle">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -175,7 +180,7 @@
         </activity>
         <activity
             android:name=".assistant.RemoteProvisioningLoginActivity"
-            android:screenOrientation="nosensor"
+            android:screenOrientation="portrait"
             android:theme="@style/NoTitle">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -183,7 +188,7 @@
         </activity>
         <activity
             android:name=".assistant.RemoteProvisioningActivity"
-            android:screenOrientation="nosensor"
+            android:screenOrientation="portrait"
             android:theme="@style/NoTitle">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -315,6 +320,7 @@
 
         <activity
             android:name=".tutorials.TutorialLauncherActivity"
+            android:screenOrientation="portrait"
             android:theme="@style/NoTitle">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -322,6 +328,7 @@
         </activity>
         <activity
             android:name=".tutorials.TutorialBuddyStatusActivity"
+            android:screenOrientation="portrait"
             android:theme="@style/NoTitle">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -329,6 +336,7 @@
         </activity>
         <activity
             android:name=".tutorials.TutorialChatRoomActivity"
+            android:screenOrientation="portrait"
             android:theme="@style/NoTitle">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -336,6 +344,7 @@
         </activity>
         <activity
             android:name=".tutorials.TutorialHelloWorldActivity"
+            android:screenOrientation="portrait"
             android:theme="@style/NoTitle">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -343,6 +352,7 @@
         </activity>
         <activity
             android:name=".tutorials.TutorialRegistrationActivity"
+            android:screenOrientation="portrait"
             android:theme="@style/NoTitle">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -350,11 +360,14 @@
         </activity>
         <activity
             android:name=".tutorials.TutorialCardDavSync"
+            android:screenOrientation="portrait"
             android:theme="@style/NoTitle">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
             </intent-filter>
         </activity>
-        <activity android:name=".LinphoneGenericActivity"></activity>
+        <activity
+            android:name=".LinphoneGenericActivity"
+            android:screenOrientation="portrait" />
     </application>
 </manifest>
